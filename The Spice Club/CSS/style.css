@@ -1,0 +1,111 @@
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing{
+    background-image: url('../media/spices-seasonings-red-pepper-black-pepper-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+header a{
+    text-decoration: none;
+    color:red;
+}
+
+header{
+    display: flex;
+    padding: 1em;
+    background:darkgoldenrod;
+}
+
+#logo{
+    flex: 3;
+    font-size: 2em;
+    font-weight: bold;
+}
+nav{
+    flex: 2;
+    display: flex;
+    padding: 0.7em;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: white;
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+
+.tagline1{
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.tagline2{
+    color: yellowgreen;
+    font-weight:bold;
+    font-size: 1.5em;
+}
+
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+}
+
+.menu{
+    display:grid;
+    background: darkgoldenrod;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+
+#menuheading,#locheading{
+    background: darkgoldenrod;
+    font-size: 2.5em;
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color:green;
+    font-size: 1.5em;
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row: span 2;
+}
